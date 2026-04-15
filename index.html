@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudentHelp — помощь студентам онлайн</title>
+  <meta name="description" content="Курсовые, дипломы и оформление по ГОСТ без паники перед дедлайном. Срочная помощь студентам онлайн." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ВСТАВЬ СЮДА КОД ЯНДЕКС.МЕТРИКИ -->
+  <!--
+  <script type="text/javascript">
+    ...
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/XXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="#top">Student<span>Help</span></a>
+
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#how-it-works">Как это работает</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-light" href="#request">Войти</a>
+        <a class="btn btn-primary" href="#request">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Срочная помощь студентам онлайн</p>
+          <h1>Курсовые, дипломы и оформление по ГОСТ — без паники перед дедлайном</h1>
+          <p class="hero-text">
+            Сервис помогает студентам быстро найти эксперта, получить консультацию,
+            доработку или полное сопровождение работы. Акцент на скорости,
+            понятном процессе и доверии.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#request">Рассчитать стоимость</a>
+            <a class="btn btn-secondary" href="#services">Смотреть услуги</a>
+          </div>
+
+          <div class="hero-stats">
+            <article class="stat-card">
+              <strong>24 ч</strong>
+              <span>на срочные заказы</span>
+            </article>
+            <article class="stat-card">
+              <strong>4.9/5</strong>
+              <span>средняя оценка сервиса</span>
+            </article>
+            <article class="stat-card">
+              <strong>ГОСТ</strong>
+              <span>и требования вуза</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="hero-panel-top">
+            <div class="mini-metric">
+              <span>Активных экспертов</span>
+              <strong>128</strong>
+            </div>
+            <div class="mini-metric">
+              <span>Среднее время ответа</span>
+              <strong>7 минут</strong>
+            </div>
+          </div>
+
+          <div class="task-card">
+            <div class="task-head">
+              <div>
+                <span class="muted">Новая заявка</span>
+                <h2>Курсовая по маркетингу</h2>
+              </div>
+              <span class="badge">Срочно</span>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+
+            <p class="task-text">
+              Тема: digital-стратегия для локального бренда<br />
+              Дедлайн: завтра, 18:00<br />
+              Нужно: структура + оформление по ГОСТ
+            </p>
+
+            <div class="task-footer">
+              <div>
+                <span class="muted">Подобран эксперт</span>
+                <strong>Екатерина, к.э.н.</strong>
+              </div>
+              <a class="btn btn-primary btn-small" href="#request">Открыть чат</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Что вы можете заказать на нашем сайте</h2>
+          <p>
+            Прототип учитывает сценарии студентов, которым нужна либо срочная помощь
+            перед дедлайном, либо доработка и оформление уже готовой работы.
+          </p>
+        </div>
+
+        <div class="cards cards-3">
+          <article class="service-card">
+            <span class="number-pill">01</span>
+            <h3>Написание работы</h3>
+            <p>Курсовые, рефераты, эссе, дипломы, отчёты по практике.</p>
+            <div class="price">от 2 500 ₽</div>
+            <ul>
+              <li>Подбор темы и структуры</li>
+              <li>Соблюдение дедлайна</li>
+              <li>Проверка уникальности</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <span class="number-pill">02</span>
+            <h3>Доработка и правки</h3>
+            <p>Исправление замечаний преподавателя и переработка разделов.</p>
+            <div class="price">от 1 490 ₽</div>
+            <ul>
+              <li>Правки по комментариям</li>
+              <li>Улучшение структуры</li>
+              <li>Экспресс-доработка</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <span class="number-pill">03</span>
+            <h3>Оформление по ГОСТ</h3>
+            <p>Ссылки, список литературы, таблицы, титульный лист, приложения.</p>
+            <div class="price">от 990 ₽</div>
+            <ul>
+              <li>Проверка требований вуза</li>
+              <li>Форматирование документа</li>
+              <li>Финальная подготовка к сдаче</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="how-it-works">
+      <div class="container">
+        <div class="section-heading section-heading-dark">
+          <h2>Логика пути пользователя на сайте</h2>
+          <p>“Мне нужно решить учебную задачу срочно, понятно и без риска.”</p>
+        </div>
+
+        <div class="steps">
+          <article class="step-card">
+            <span class="step-badge">1</span>
+            <h3>Попадает с поиска</h3>
+            <p>Видит обещание срочной помощи, гарантии и понятный CTA.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-badge">2</span>
+            <h3>Выбирает услугу</h3>
+            <p>Написание, доработка, оформление по ГОСТ или консультация.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-badge">3</span>
+            <h3>Оставляет заявку</h3>
+            <p>Указывает тему, предмет, дедлайн, прикрепляет файл и комментарии.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-badge">4</span>
+            <h3>Получает результат</h3>
+            <p>Ведёт переписку с экспертом, отслеживает статус и скачивает готовую работу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Почему нам доверяют</h2>
+        </div>
+
+        <div class="cards cards-4">
+          <article class="trust-card">
+            <span class="icon-chip">✓</span>
+            <h3>Гарантия сроков</h3>
+            <p>Показываем чёткий дедлайн выполнения и статус заказа.</p>
+          </article>
+          <article class="trust-card">
+            <span class="icon-chip">★</span>
+            <h3>Рейтинг экспертов</h3>
+            <p>Карточки исполнителей с дисциплинами, отзывами и опытом.</p>
+          </article>
+          <article class="trust-card">
+            <span class="icon-chip">ГОСТ</span>
+            <h3>Проверка требований</h3>
+            <p>Отдельный акцент на оформлении и методичках вузов.</p>
+          </article>
+          <article class="trust-card">
+            <span class="icon-chip">24/7</span>
+            <h3>Срочная связь</h3>
+            <p>Онлайн-чат и быстрый ответ на вопрос по заказу.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="request">
+      <div class="container request-grid">
+        <div class="request-form-card">
+          <div class="section-heading compact">
+            <h2>Оформление заявки</h2>
+            <p>Ключевой экран прототипа: минимум полей, понятные шаги, акцент на срочность.</p>
+          </div>
+
+          <form class="request-form">
+            <div class="form-grid">
+              <label>
+                <span class="sr-only">Тип работы</span>
+                <input type="text" name="work_type" placeholder="Тип работы: Курсовая" />
+              </label>
+              <label>
+                <span class="sr-only">Предмет</span>
+                <input type="text" name="subject" placeholder="Предмет: Маркетинг" />
+              </label>
+              <label>
+                <span class="sr-only">Дедлайн</span>
+                <input type="text" name="deadline" placeholder="Дедлайн: 12 мая, 18:00" />
+              </label>
+              <label>
+                <span class="sr-only">Объём</span>
+                <input type="text" name="volume" placeholder="Объём: 25 страниц" />
+              </label>
+            </div>
+
+            <label>
+              <span class="sr-only">Комментарий</span>
+              <textarea name="comment" rows="5" placeholder="Комментарий: нужно доработать структуру, добавить актуальные источники и оформить по ГОСТ."></textarea>
+            </label>
+
+            <label>
+              <span class="sr-only">Файл</span>
+              <input type="text" name="file" placeholder="Прикрепить файл / методичку" />
+            </label>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Получить расчёт</button>
+              <a class="btn btn-secondary" href="https://t.me/" target="_blank" rel="noopener noreferrer">Написать в чат</a>
+            </div>
+          </form>
+        </div>
+
+        <aside class="price-box">
+          <p class="muted-light">Предварительный расчёт</p>
+          <div class="price-box-value">3 490 ₽</div>
+          <p class="price-box-text">
+            Срок: до завтра, 18:00<br />
+            Исполнитель: эксперт по экономике и маркетингу<br />
+            Включено: правки, оформление, консультация
+          </p>
+          <button class="btn btn-white" type="button">Подтвердить заказ</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Отзывы студентов</h2>
+        </div>
+
+        <div class="cards cards-3">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«За сутки помогли переделать курсовую после комментариев преподавателя. Всё объяснили простыми словами.»</p>
+            <strong>Даниил, 2 курс</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Мне было важно не тратить время на оформление диплома. Отправила файл и получила готовый вариант под требования.»</p>
+            <strong>Алина, магистратура</strong>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p>«Удобно, что можно сразу написать в чат и приложить методичку. Не пришлось долго разбираться.»</p>
+            <strong>Мария, 4 курс</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Частые вопросы</h2>
+        </div>
+
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>Можно ли срочно за 1 день?</h3>
+            <p>Да, для части услуг предусмотрен срочный режим. Система сразу показывает, доступен ли такой срок.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Что если преподаватель вернёт работу?</h3>
+            <p>В прототипе предусмотрен блок «доработка по замечаниям» и чат с экспертом для уточнений.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Можно ли оформить уже готовый текст?</h3>
+            <p>Да, это отдельная услуга с акцентом на ГОСТ, список литературы, таблицы и титульный лист.</p>
+          </article>
+          <article class="faq-card">
+            <h3>Как происходит общение?</h3>
+            <p>Через встроенный чат и статусы заказа: заявка, в работе, на проверке, готово.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#top">Student<span>Help</span></a>
+        <p>Онлайн-сервис помощи студентам с учебными работами, доработкой и оформлением по ГОСТ.</p>
+      </div>
+
+      <div>
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="#top">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Поддержка</h3>
+        <ul>
+          <li><a href="#request">Чат с менеджером</a></li>
+          <li><a href="#request">Статусы заказа</a></li>
+          <li><a href="#faq">Политика сервиса</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Контакты</h3>
+        <ul>
+          <li><a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          <li><a href="mailto:info@studenthelp.example">Email</a></li>
+          <li><a href="tel:88000000000">8 800 000 00 00</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -10,19 +10,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 
- <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108555766', 'ym');
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108555766', 'ym');
 
-    ym(108555766, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/108555766" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+      ym(108555766, 'init', {
+        ssr:true,
+        webvisor:true,
+        clickmap:true,
+        ecommerce:"dataLayer",
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce:true,
+        trackLinks:true
+      });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/108555766" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
 <body>
   <header class="site-header">
@@ -37,8 +46,8 @@
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-light" href="#request">Войти</a>
-        <a class="btn btn-primary" href="#request">Оставить заявку</a>
+        <a class="btn btn-light" href="https://t.me/" target="_blank" rel="noopener noreferrer" data-goal="open_chat_header">Написать в чат</a>
+        <a class="btn btn-primary" href="#request" data-goal="open_request_header">Оставить заявку</a>
       </div>
     </div>
   </header>
@@ -56,8 +65,8 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#request">Рассчитать стоимость</a>
-            <a class="btn btn-secondary" href="#services">Смотреть услуги</a>
+            <a class="btn btn-primary" href="#request" data-goal="calculate_price_hero">Рассчитать стоимость</a>
+            <a class="btn btn-secondary" href="#services" data-goal="view_services_hero">Смотреть услуги</a>
           </div>
 
           <div class="hero-stats">
@@ -112,7 +121,7 @@
                 <span class="muted">Подобран эксперт</span>
                 <strong>Екатерина, к.э.н.</strong>
               </div>
-              <a class="btn btn-primary btn-small" href="#request">Открыть чат</a>
+              <a class="btn btn-primary btn-small" href="#request" data-goal="open_chat_card">Открыть чат</a>
             </div>
           </div>
         </aside>
@@ -240,29 +249,29 @@
             <p>Ключевой экран прототипа: минимум полей, понятные шаги, акцент на срочность.</p>
           </div>
 
-          <form class="request-form">
+          <form class="request-form" id="requestForm">
             <div class="form-grid">
               <label>
                 <span class="sr-only">Тип работы</span>
-                <input type="text" name="work_type" placeholder="Тип работы: Курсовая" />
+                <input type="text" name="work_type" placeholder="Тип работы: Курсовая" required />
               </label>
               <label>
                 <span class="sr-only">Предмет</span>
-                <input type="text" name="subject" placeholder="Предмет: Маркетинг" />
+                <input type="text" name="subject" placeholder="Предмет: Маркетинг" required />
               </label>
               <label>
                 <span class="sr-only">Дедлайн</span>
-                <input type="text" name="deadline" placeholder="Дедлайн: 12 мая, 18:00" />
+                <input type="text" name="deadline" placeholder="Дедлайн: 12 мая, 18:00" required />
               </label>
               <label>
                 <span class="sr-only">Объём</span>
-                <input type="text" name="volume" placeholder="Объём: 25 страниц" />
+                <input type="text" name="volume" placeholder="Объём: 25 страниц" required />
               </label>
             </div>
 
             <label>
               <span class="sr-only">Комментарий</span>
-              <textarea name="comment" rows="5" placeholder="Комментарий: нужно доработать структуру, добавить актуальные источники и оформить по ГОСТ."></textarea>
+              <textarea name="comment" rows="5" placeholder="Комментарий: нужно доработать структуру, добавить актуальные источники и оформить по ГОСТ." required></textarea>
             </label>
 
             <label>
@@ -272,8 +281,12 @@
 
             <div class="form-actions">
               <button class="btn btn-primary" type="submit">Получить расчёт</button>
-              <a class="btn btn-secondary" href="https://t.me/" target="_blank" rel="noopener noreferrer">Написать в чат</a>
+              <a class="btn btn-secondary" href="https://t.me/" target="_blank" rel="noopener noreferrer" data-goal="open_chat_form">Написать в чат</a>
             </div>
+
+            <p id="formMessage" style="display:none; margin:10px 0 0; color:#16a34a; font-weight:600;">
+              Заявка отправлена. Мы скоро свяжемся с вами.
+            </p>
           </form>
         </div>
 
@@ -285,7 +298,7 @@
             Исполнитель: эксперт по экономике и маркетингу<br />
             Включено: правки, оформление, консультация
           </p>
-          <button class="btn btn-white" type="button">Подтвердить заказ</button>
+          <button class="btn btn-white" type="button" data-goal="confirm_order_click">Подтвердить заказ</button>
         </aside>
       </div>
     </section>
@@ -380,5 +393,56 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function reachGoal(goalName) {
+      if (typeof ym === 'function') {
+        ym(108555766, 'reachGoal', goalName);
+      }
+    }
+
+    document.querySelectorAll('[data-goal]').forEach(function(element) {
+      element.addEventListener('click', function() {
+        var goalName = element.getAttribute('data-goal');
+        if (goalName) {
+          reachGoal(goalName);
+        }
+      });
+    });
+
+    var form = document.getElementById('requestForm');
+    var formMessage = document.getElementById('formMessage');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var formData = new FormData(form);
+      var workType = formData.get('work_type');
+      var subject = formData.get('subject');
+      var deadline = formData.get('deadline');
+      var volume = formData.get('volume');
+      var comment = formData.get('comment');
+      var file = formData.get('file');
+
+      reachGoal('submit_request_form');
+
+      formMessage.style.display = 'block';
+
+      var text =
+        'Новая заявка с сайта StudentHelp:\n' +
+        'Тип работы: ' + workType + '\n' +
+        'Предмет: ' + subject + '\n' +
+        'Дедлайн: ' + deadline + '\n' +
+        'Объём: ' + volume + '\n' +
+        'Комментарий: ' + comment + '\n' +
+        'Файл/методичка: ' + file;
+
+      setTimeout(function() {
+        navigator.clipboard.writeText(text).catch(function() {});
+      }, 100);
+
+      form.reset();
+    });
+  </script>
 </body>
 </html>
